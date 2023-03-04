@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --decoration: #fff;
+    --main-background: #1B1212;
+    --main-text: #808080;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--main-text);
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: var(--main-background);
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.tab_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--decoration);
+    border-radius: .3em;
+    width: 300px;
+    padding: 10px;
+}
+.tab_area form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tab_area #numb {
+    width: 40px;
+    height: 30px;
+    color: #000;
+}
+.tab_area #btn, #refresh {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--decoration);
+    border-radius: 25px;
+    background: var(--main-background);
+}
+.tab_area #refresh{
+    display: none;
+}
+.tab_area .bx{
+    color: var(--decoration);
+    zoom: 2;
+}
+
+.tab_result{
+    background: #28282B;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 50%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+@media (max-width:600px) {
+    .tab_area {
+        width: 100%;
+        border: none;
+    }
+}
